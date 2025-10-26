@@ -5,14 +5,12 @@ using namespace std;
 
 class Operator {
     private:
-        int a = 0;
-        int b = 0;
+        int a = -1;
+        int b = 2;
 
     public:
         void goodOperation() {
-            cout << "insert two numbers:";
-            cin >> a >> b;
-            if ((a > 5) && (b == 2)) {  // Cambiado || por &&
+            if ((a > 5 ) || (b == 2)) {
                 cerr << "good operation" << endl;
             } else {
                 cerr << "bad operation" << endl;
